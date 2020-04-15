@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fWG-CX-9uP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="k5I-ac-ADc">
+            <objects>
+                <viewController storyboardIdentifier="Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fWG-CX-9uP" customClass="DetailViewController" customModule="PictureApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KLY-jd-f2o" userLabel="view">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQc-Jo-elh" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gQc-Jo-elh" firstAttribute="leading" secondItem="idf-jN-LkN" secondAttribute="leading" id="1qT-nt-w7k"/>
+                            <constraint firstItem="idf-jN-LkN" firstAttribute="bottom" secondItem="gQc-Jo-elh" secondAttribute="bottom" id="Lca-pa-bjC"/>
+                            <constraint firstItem="gQc-Jo-elh" firstAttribute="top" secondItem="idf-jN-LkN" secondAttribute="top" id="ORc-va-G1i"/>
+                            <constraint firstItem="idf-jN-LkN" firstAttribute="trailing" secondItem="gQc-Jo-elh" secondAttribute="trailing" id="bi0-pe-Rzg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="idf-jN-LkN"/>
+                    </view>
+                    <connections>
+                        <outlet property="fullScreenImage" destination="gQc-Jo-elh" id="7Qh-UK-TIa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wN5-Ug-GWL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77" y="117"/>
+        </scene>
+    </scenes>
+</document>
